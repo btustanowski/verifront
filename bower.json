@@ -1,0 +1,26 @@
+{
+  "name": "verifront",
+  "version": "1.0.0",
+  "homepage": "https://github.com/btustanowski/verifront",
+  "authors": [
+    "btustanowski <b.tustanowski@gmail.com>"
+  ],
+  "description": "verifront webapp",
+  "main": "index.js",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "verifront"
+  ],
+  "license": "ICS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components/",
+    "test",
+    "tests"
+  ]
+}
