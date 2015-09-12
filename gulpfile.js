@@ -11,7 +11,7 @@ var del = require('del');
 gulp.task('sass', ['sprites'], function () {
     del(['./app/styles/tmp/scss.css']); // clear output file
     return gulp.src([
-        './app/components/material-design-lite/src/material-design-lite.scss',
+        './app/components/Materialize/sass/materialize.scss',
         './app/styles/global.scss'
     ]).pipe(sass({
         style: 'compressed'
@@ -26,6 +26,7 @@ gulp.task('js', function() {
             // LIBRARIES AND FRAMEWORKS
             './app/components/moment/moment.js',
             './app/components/angular/angular.js',
+            './app/components/Materialize/dist/js/materialize.js',
 
             // BOOT
             './app/scripts/boot.js',

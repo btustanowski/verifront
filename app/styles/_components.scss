@@ -1,0 +1,118 @@
+.steps {
+  .collapsible-header, i {
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+.parallax-container {
+  &.short {
+    height: 300px;
+    margin-bottom: 40px;
+  }
+}
+
+.plan-highlight {
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+
+.collection-badge {
+  float: right;
+  border-radius: 2px;
+  padding: 0 6px;
+  margin-left: 8px;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.row {
+  .no-bottom {
+    margin: 0;
+  }
+}
+
+
+.collection {
+  .circle {
+    font-style: normal;
+  }
+  .collection-item {
+    &.avatar i.circle {
+      background: $green;
+    }
+    &.link {
+      cursor: pointer;
+      @include transition(background .3s ease);
+      &:hover {
+        background: $grey-light;
+      }
+    }
+    .rightpanel {
+      float: right;
+    }
+    p {
+      padding: 8px 0;
+      &.no-margin {
+        margin: 0;
+      }
+    }
+  }
+  a.collection-item {
+    color: darken($green, 15%);
+    &:not(.active):hover {
+        background-color: $grey-light;
+      }
+    }
+}
+
+.card {
+  .ribbon {
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.testcard {
+  .answerblock {
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .answer {
+    display: inline-block;
+    &.single {
+    }
+    &.multi {
+      margin: 0 10px;
+    }
+  }
+}
+
+.report {
+  .answerblock {
+    display: none;
+    &.selected {
+      display: inline-block;
+    }
+    &.incorrect, &.correct {
+      font-weight: 700;
+    }
+  }
+}
+
+.ng-hide-add {
+  transition: 0s linear all;
+}
+
+.btn-block {
+  display: block;
+}

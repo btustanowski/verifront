@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixins";
+@import "sections";
+@import "components";
+@import "header";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7em;
+  background: $white;
+  color: $grey-darkest;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:focus {
+    outline: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+  color: $green;
+  font-weight: 700;
+}
+
+section {
+  &.padded {
+    margin-top: 50px;
+  }
+}
