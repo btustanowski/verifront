@@ -1,3 +1,26 @@
-.demo-layout-transparent {
-  background: url('../assets/demos/transparent.jpg') center / cover;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 0;
+  font-size: 13px;
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 4px solid transparent;
+    &.link {
+      padding: 5px 10px;
+      margin: 8px 2px;
+      @include transition(all 0.4s ease);
+      &:hover {
+        border-color: $primary;
+      }
+    }
+    &.logo {
+      float: left;
+    }
+  }
 }

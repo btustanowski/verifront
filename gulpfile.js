@@ -11,7 +11,6 @@ var del = require('del');
 gulp.task('sass', ['sprites'], function () {
     del(['./app/styles/tmp/scss.css']); // clear output file
     return gulp.src([
-        './app/components/Materialize/sass/materialize.scss',
         './app/styles/global.scss'
     ]).pipe(sass({
         style: 'compressed'
@@ -26,14 +25,13 @@ gulp.task('js', function() {
             // LIBRARIES AND FRAMEWORKS
             './app/components/moment/moment.js',
             './app/components/angular/angular.js',
-            './app/components/Materialize/dist/js/materialize.js',
 
             // BOOT
             './app/scripts/boot.js',
 
             // ANGULAR COMPONENTS
             './app/components/angular-resource/angular-resource.js',
-            './app/components/angular-translate/angular-translate.js',
+            // './app/components/angular-translate/angular-translate.js',
             './app/components/angular-sanitize/angular-sanitize.js',
             './app/components/angular-ui-router/release/angular-ui-router.js',
             './app/components/angular-moment/angular-moment.min.js',
@@ -49,7 +47,7 @@ gulp.task('js', function() {
         ]
     )
         .pipe(concat('verifront.js'))
-        //.pipe(gulp.dest('./public/js')) // Uncomment to add non-ugly output.
+        // .pipe(gulp.dest('./public/js')) // Uncomment to add non-ugly output.
         .pipe(rename('verifront.min.js'))
         // .pipe(ngmin()) // VERY heavy angular-safe compression. If ran, it should be possible to enable mangling in uglify(). REQUIRES EXTENSIVE TESTING AFTERWARDS.
         .pipe(uglify({mangle: false}))
@@ -71,7 +69,8 @@ gulp.task('sprites', function() {
 gulp.task('css', ['sass', 'sprites'],  function() {
     return gulp.src(
         [
-            './app/components/normalize.css/normalize.css',
+            './app/components/pure/base.css',
+            './app/components/pure/grids.css',
             './app/styles/tmp/*.css'
         ]
     )

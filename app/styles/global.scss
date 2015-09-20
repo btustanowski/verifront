@@ -12,10 +12,11 @@
 
 body {
   line-height: 1.7em;
-  background: $white;
-  color: $grey-darkest;
+  background: $background;
+  color: $primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: $raleway;
 }
 
 a {
@@ -61,4 +62,9 @@ section {
   &.padded {
     margin-top: 50px;
   }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
