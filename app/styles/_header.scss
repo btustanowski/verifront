@@ -12,13 +12,14 @@ header {
     font-size: 14px;
     font-weight: 500;
     border: 2px solid transparent;
+    color: $primary;
     &.link {
       padding: 5px 10px;
       margin: 10px 2px;
       @include transition(all 0.4s ease);
       &:hover {
+        background: $background;
         border-color: $primary;
-        transform: scale(1.1);
       }
     }
     &.logo {

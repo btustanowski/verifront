@@ -22,12 +22,21 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: $secondary;
+  font-family: $roboto;
   &:focus {
     outline: 0;
   }
 }
 
+p {
+  font-family: $roboto;
+  font-size: 14px;
+  color: $grey-darker;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  font-family: $roboto;
   font-weight: 300;
 }
 
@@ -59,8 +68,12 @@ em {
 }
 
 section {
+  position: relative;
   &.padded {
     margin-top: 50px;
+  }
+  &.white {
+    background: $white;
   }
 }
 
