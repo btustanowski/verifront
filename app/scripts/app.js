@@ -15,10 +15,12 @@ vf = angular.module("vf", [
     "factories",
     "directives",
     "controllers",
-]).run(function($templateCache, $http, $timeout, $rootScope, amMoment) {
+]).run(function($templateCache, $http, $timeout, $rootScope, amMoment, $window) {
     $rootScope.$on("$stateChangeSuccess", function() {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
+
+    angular.element($window)
 
     amMoment.changeLocale(navigator.language);
 

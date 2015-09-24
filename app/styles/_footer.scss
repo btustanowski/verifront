@@ -1,0 +1,49 @@
+footer {
+  background: $grey-darkest;
+  color: $grey;
+  article {
+    padding: 100px 0;
+    background: lighten($grey-darkest, 5%);
+    text-align: center;
+    .icon-logo-flip {
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+    span, address {
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: normal;
+    }
+    aside {
+      font-family: $roboto;
+      color: $grey-dark;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  }
+  .lighter {
+    height: 100%;
+    padding: 100px 0;
+    h4 {
+      text-transform: uppercase;
+      margin: 0;
+      padding-left: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    nav {
+      margin-top: 30px;
+      padding-left: 10px;
+      a {
+        display: block;
+        color: $grey-dark;
+        padding: 10px;
+        @include transition(all 0.4s ease);
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

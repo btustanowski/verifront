@@ -24,6 +24,7 @@ section.hero {
         padding: 16px 18px;
         font-weight: 500;
         background: $background;
+        color: $primary;
         &.dark {
           background: $primary;
           color: $background;

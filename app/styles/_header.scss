@@ -6,6 +6,12 @@ header {
   text-align: right;
   padding: 15px 0;
   z-index: 1000;
+  @include transition(all 0.4s ease);
+  &.background {
+    background: $background;
+    border-bottom: 1px solid $grey;
+    padding: 0;
+  }
   a {
     display: inline-block;
     text-transform: uppercase;

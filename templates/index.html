@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<header>
+<header ng-controller="HeaderController as header" ng-class="{background: header.bg}">
     <nav class="container">
         <a class="logo">
             <div class="icon-logo"></div>
@@ -66,6 +66,44 @@
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="pure-g container">
+        <article class="pure-u-1-4">
+            <div class="icon-logo-flip"></div>
+            <address>info@verifront.pl</address>
+            <span>+48 886 992 991</span>
+            <address>Kulczyńskiego 2</address>
+            <address>45-428 Opole</address>
+            <aside>&copy; Verifront 2015</aside>
+        </article>
+        <div class="lighter pure-u-1-4">
+            <h4>Oferta</h4>
+            <nav>
+                <a>Audyt stron www</a>
+                <a>Szkolenia IT</a>
+                <a>Konsulting</a>
+                <a>Kontakt</a>
+            </nav>
+        </div>
+        <div class="lighter pure-u-1-4">
+            <h4>Informacje</h4>
+            <nav>
+                <a>O firmie</a>
+                <a>Polityka prywatności</a>
+                <a>Regulamin</a>
+            </nav>
+        </div>
+        <div class="lighter pure-u-1-4">
+            <h4>Społeczność</h4>
+            <nav>
+                <a class="social facebook">Facebook</a>
+                <a class="social twitter">Twitter</a>
+                <a class="social linkedin">LinkedIn</a>
+            </nav>
+        </div>
+    </div>
+</footer>
 
 <div class="veil"></div>
 <div class="lightveil"></div>
