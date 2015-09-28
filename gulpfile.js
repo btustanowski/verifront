@@ -69,13 +69,13 @@ gulp.task('sprites', function() {
 gulp.task('css', ['sass', 'sprites'],  function() {
     return gulp.src(
         [
-            './app/components/pure/base.css',
-            './app/components/pure/grids.css',
+            './app/components/pure/pure.css',
+            './app/components/pure/grids-responsive.css',
             './app/styles/tmp/*.css'
         ]
     )
         .pipe(concat('verifront.min.css'))
-        .pipe(cssmin())
+        // .pipe(cssmin())
         .pipe(gulp.dest('./public/css'));
 });
 

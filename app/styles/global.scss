@@ -20,6 +20,10 @@ body {
   font-family: $roboto;
 }
 
+html, button, input, select, textarea, .pure-g[class *= "pure-u"] {
+  letter-spacing: 0.01em;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;

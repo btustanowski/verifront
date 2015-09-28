@@ -5,18 +5,26 @@
   -o-transition: $args;
   transition: $args;
 }
-@mixin mobile {
-  @media (max-width: 600px) {
+@mixin sm {
+  @media screen and (min-width: 35.5em) {
     @content;
   }
 }
-@mixin tablet {
-  @media (min-width: 601px) {
+
+@mixin md {
+  @media screen and (min-width: 48em) {
     @content;
   }
 }
-@mixin desktop {
-  @media (min-width: 993px) {
+
+@mixin lg {
+  @media screen and (min-width: 64em) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 80em) {
     @content;
   }
 }

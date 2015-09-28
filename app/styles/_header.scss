@@ -12,6 +12,12 @@ header {
     border-bottom: 1px solid $grey;
     padding: 0;
   }
+  nav {
+    text-align: center;
+    @include md {
+      text-align: right;
+    }
+  }
   a {
     display: inline-block;
     text-transform: uppercase;
@@ -29,7 +35,17 @@ header {
       }
     }
     &.logo {
-      float: left;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      @include md {
+        float: left;
+        display: inline-block;
+        margin-left: 15px;
+      }
+      div {
+        display: inline-block;
+      }
     }
   }
 }
