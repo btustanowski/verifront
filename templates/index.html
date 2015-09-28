@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="vf">
+<html ng-app="vf" ng-cloak>
 <head lang="en">
     <base href="/">
     <meta charset="UTF-8">
@@ -13,59 +13,17 @@
 <body>
 <header ng-controller="HeaderController as header" ng-class="{background: header.bg}">
     <nav class="container">
-        <a class="logo">
+        <a class="logo" ui-sref="/">
             <div class="icon-logo"></div>
         </a>
-        <a class="link">Audyt stron www</a>
-        <a class="link">Szkolenia IT</a>
-        <a class="link">Konsulting</a>
-        <a class="link">Kontakt</a>
+        <a class="link" ui-sref="audit">Audyt stron www</a>
+        <a class="link" ui-sref="training">Szkolenia IT</a>
+        <a class="link" ui-sref="consulting">Konsulting</a>
+        <a class="link" ui-sref="contact">Kontakt</a>
     </nav>
 </header>
 
-<section class="hero">
-    <canvas id="canvas"></canvas>
-    <article class="container">
-        <h1>Jakość Online</h1>
-        <h2>Audyt stron internetowych potwierdza<br>ich Rzetelne wykonanie i Skuteczność</h2>
-        <nav>
-            <a class="dark">Dowiedz się więcej</a>
-            <a>Zapytaj o audyt</a>
-        </nav>
-    </article>
-</section>
-
-<section class="white triplets">
-    <div class="pure-g container">
-        <div class="pure-u-1-3 triplet">
-            <h5>Bezpieczeństwo, SEO, Wydajność</h5>
-            <h3>Audyt stron www</h3>
-            <p>Strona internetowa to wizytówka firmy dostępna 24 godziny na dobę z dowolnego miejsca na świecie. Rzetelnie przygotowana strona o wysokiej dostępności może poprawić wizerunek marki. Nieprofesjonalna strona, która zawiera błędy będzie odstraszać klientów i silniki wyszukiwarek.</p>
-            <a>Czytaj dalej</a>
-        </div>
-        <div class="pure-u-1-3 triplet">
-            <h5>Szkolenia w grupach i indywidualne</h5>
-            <h3>Szkolenia IT</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida leo nec dolor venenatis, vitae feugiat est aliquet. Nullam tristique massa nisl, ut bibendum tortor placerat at. Nunc odio ante, blandit eget blandit non, eleifend vitae purus. Duis congue ultricies nisl ac venenatis.</p>
-            <a>Czytaj dalej</a>
-        </div>
-        <div class="pure-u-1-3 triplet">
-            <h5>Architektura rozwiązań</h5>
-            <h3>Konsulting</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida leo nec dolor venenatis, vitae feugiat est aliquet. Nullam tristique massa nisl, ut bibendum tortor placerat at. Nunc odio ante, blandit eget blandit non, eleifend vitae purus. Duis congue ultricies nisl ac venenatis.</p>
-            <a>Czytaj dalej</a>
-        </div>
-    </div>
-</section>
-
-<section class="singlet">
-    <div class="pure-g container">
-        <div class="pure-u-1">
-            <h2>Doskonałość od dzisiaj</h2>
-            <p>Strona internetowa to wizytówka firmy dostępna 24 godziny na dobę z dowolnego miejsca na świecie. Rzetelnie przygotowana strona o wysokiej dostępności może poprawić wizerunek marki. Nieprofesjonalna strona, która zawiera błędy będzie odstraszać klientów i silniki wyszukiwarek.</p>
-        </div>
-    </div>
-</section>
+<ui-view ng-cloak></ui-view>
 
 <footer>
     <div class="pure-g container">

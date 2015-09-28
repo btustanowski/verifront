@@ -20,10 +20,6 @@ vf = angular.module("vf", [
         document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
 
-    angular.element($window)
-
-    amMoment.changeLocale(navigator.language);
-
     // $translate.use(C.locale || navigator.language.split("-")[0]);
 
     /* preload templates

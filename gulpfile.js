@@ -84,7 +84,7 @@ gulp.task('default', ['js', 'css'], function() {
     console.log('Build complete!');
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['default'], function () {
     gulp.watch('./app/styles/**', ['css']);
     gulp.watch('./app/scripts/**', ['js']);
 });
