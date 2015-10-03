@@ -83,3 +83,17 @@ section.singlet {
     text-align: center;
   }
 }
+
+section.feature {
+  padding: 70px;
+  margin-bottom: 50px;
+  background: $white;
+  .left {
+    display: none;
+    float: left;
+    margin-right: 30px;
+    @include md {
+      display: block;
+    }
+  }
+}

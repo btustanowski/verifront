@@ -25,6 +25,6 @@ module.exports = function(express, app, controller) {
 
     // 404 catch-all
     app.get('*', function (req, res) {
-        res.redirect('/');
+        res.sendFile(path.join(__dirname, '../templates', 'index.html'));
     });
 };

@@ -75,7 +75,7 @@ gulp.task('css', ['sass', 'sprites'],  function() {
         ]
     )
         .pipe(concat('verifront.min.css'))
-        // .pipe(cssmin())
+        .pipe(cssmin())
         .pipe(gulp.dest('./public/css'));
 });
 
