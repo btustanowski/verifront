@@ -1,0 +1,30 @@
+{
+  "name": "verifront",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Blaze Tustanowski <b.tustanowski@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/btustanowski/verifront",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "moment": "^2.13.0",
+    "angular": "^1.5.6",
+    "normalize-css": "normalize.css#^4.1.1",
+    "metro": "^3.0.14",
+    "angular-translate": "^2.11.0",
+    "angular-sanitize": "^1.5.6",
+    "angular-ui-router": "^0.3.1",
+    "angular-moment": "^0.10.3"
+  }
+}
