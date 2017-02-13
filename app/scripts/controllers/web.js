@@ -1,8 +1,8 @@
-controllers.controller('ConsultingController', [
+controllers.controller('WebController', [
     '$rootScope', '$scope', '$window', '$timeout',
     function ($rootScope, $scope, $window) {
         angular.element(document).ready(function() {
-            hero({r: 123, g: 86, b: 173});
+            hero({r: 86, g: 123, b: 173});
         });
     }
 ]);

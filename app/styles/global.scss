@@ -38,6 +38,9 @@ p {
   font-family: $roboto;
   font-size: 14px;
   color: $grey-darker;
+  &.cc_message {
+    color: $grey;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

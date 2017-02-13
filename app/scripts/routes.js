@@ -11,22 +11,23 @@ vf.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
             .state("/", {
                 url: "/",
                 templateUrl: "template/pages/home.html",
-                controller: "HomeController"
+                controller: "HomeController",
+                controllerAs: "HC",
+            })
+            .state("web", {
+                url: "/projektowanie-www",
+                templateUrl: "template/pages/consulting.html",
+                controller: "WebController"
+            })
+            .state("apps", {
+                url: "/aplikacje-interenetowe",
+                templateUrl: "template/pages/training.html",
+                controller: "AppsController"
             })
             .state("audit", {
-                url: "/audyt",
+                url: "/audyt-www",
                 templateUrl: "template/pages/audit.html",
                 controller: "AuditController"
-            })
-            .state("consulting", {
-                url: "/konsulting",
-                templateUrl: "template/pages/consulting.html",
-                controller: "ConsultingController"
-            })
-            .state("training", {
-                url: "/szkolenia",
-                templateUrl: "template/pages/training.html",
-                controller: "TrainingController"
             })
             .state("contact", {
                 url: "/kontakt",

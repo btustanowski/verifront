@@ -19,7 +19,7 @@
     );
     window.D = D;
     window.cookieconsent_options = {
-        "message": "Verifront wykorzystuje ciasteczka aby zapewni? Pa?stwu najwy?sz? jako?? przegl?dania.",
+        "message": "Verifront wykorzystuje ciasteczka aby zapewnić Państwu najwyższą jakość przeglądania.",
         "dismiss": "Rozumiem",
         "learnMore": "more",
         "link": null,
