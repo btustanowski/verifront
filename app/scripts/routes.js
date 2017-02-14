@@ -12,11 +12,11 @@ vf.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
                 url: "/",
                 templateUrl: "template/pages/home.html",
                 controller: "HomeController",
-                controllerAs: "HC",
+                controllerAs: "HC"
             })
             .state("web", {
                 url: "/projektowanie-www",
-                templateUrl: "template/pages/consulting.html",
+                templateUrl: "template/pages/web.html",
                 controller: "WebController"
             })
             .state("apps", {

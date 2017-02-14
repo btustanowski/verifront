@@ -18,6 +18,8 @@
         }
     );
     window.D = D;
+
+    /*
     window.cookieconsent_options = {
         "message": "Verifront wykorzystuje ciasteczka aby zapewnić Państwu najwyższą jakość przeglądania.",
         "dismiss": "Rozumiem",
@@ -25,4 +27,5 @@
         "link": null,
         "theme": "dark-bottom",
     };
+    */
 })();
