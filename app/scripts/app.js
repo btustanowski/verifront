@@ -10,6 +10,7 @@ vf = angular.module("vf", [
     "ngResource",
     "ngSanitize",
     "ui.router",
+    "ngMap",
     "filters",
     "services",
     "factories",

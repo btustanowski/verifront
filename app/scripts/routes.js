@@ -21,7 +21,7 @@ vf.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
             })
             .state("apps", {
                 url: "/aplikacje-interenetowe",
-                templateUrl: "template/pages/training.html",
+                templateUrl: "template/pages/apps.html",
                 controller: "AppsController"
             })
             .state("audit", {

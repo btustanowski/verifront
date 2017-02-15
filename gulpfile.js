@@ -43,7 +43,7 @@ gulp.task('js', function() {
             './app/scripts/*.js',
 
             // VENDOR SCRIPTS
-            // './app/components/cookieconsent2/cookieconsent.js'
+            './app/components/ngmap/build/scripts/ng-map.min.js',
         ]
     )
         .pipe(concat('verifront.js'))

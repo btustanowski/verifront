@@ -126,3 +126,15 @@ section.contact {
     text-align: center;
   }
 }
+
+section.apps {
+  padding: 40px 0;
+  margin-bottom: 50px;
+  background: $white;
+  .cell {
+    p {
+      padding-right: 15px;
+    }
+    margin-bottom: 15px;
+  }
+}

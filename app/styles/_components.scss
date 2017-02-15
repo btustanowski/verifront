@@ -39,6 +39,23 @@ strong {
   }
 }
 
+hr {
+  background: $grey;
+  width: 100%;
+  height: 3px;
+  position: relative;
+  border: 0;
+  margin: 40px 0;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 20%;
+    background: $secondary;
+    content: '';
+  }
+}
 
 .collection {
   .circle {
